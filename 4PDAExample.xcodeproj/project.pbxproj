@@ -13,9 +13,16 @@
 		845F504E1E08074D00016665 /* _PDAExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 845F504C1E08074D00016665 /* _PDAExample.xcdatamodeld */; };
 		845F50501E08074D00016665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845F504F1E08074D00016665 /* Assets.xcassets */; };
 		845F50531E08074D00016665 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845F50511E08074D00016665 /* LaunchScreen.storyboard */; };
+		845F505E1E080E5700016665 /* RSSCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F505D1E080E5700016665 /* RSSCell.swift */; };
+		845F50641E08141000016665 /* RSSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F50631E08141000016665 /* RSSParser.swift */; };
+		845F50661E081D3600016665 /* RSSCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845F50651E081D3600016665 /* RSSCell.xib */; };
+		845F50691E08284100016665 /* FeedInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F50681E08284100016665 /* FeedInfo.swift */; };
+		845F506B1E082C7700016665 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F506A1E082C7700016665 /* NetworkService.swift */; };
+		BF4DB1F49B9339FFCB07548A /* Pods_4PDAExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC024B0D6B72A30224358766 /* Pods_4PDAExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34C2D9668A22C37EA1417656 /* Pods-4PDAExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-4PDAExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-4PDAExample/Pods-4PDAExample.release.xcconfig"; sourceTree = "<group>"; };
 		845F50421E08074C00016665 /* 4PDAExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 4PDAExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845F50451E08074D00016665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		845F50471E08074D00016665 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +31,14 @@
 		845F504F1E08074D00016665 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		845F50521E08074D00016665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		845F50541E08074D00016665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845F505D1E080E5700016665 /* RSSCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSCell.swift; sourceTree = "<group>"; };
+		845F505F1E080F6000016665 /* 4PDAExample-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "4PDAExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		845F50631E08141000016665 /* RSSParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSParser.swift; sourceTree = "<group>"; };
+		845F50651E081D3600016665 /* RSSCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSSCell.xib; sourceTree = "<group>"; };
+		845F50681E08284100016665 /* FeedInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedInfo.swift; sourceTree = "<group>"; };
+		845F506A1E082C7700016665 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		CC024B0D6B72A30224358766 /* Pods_4PDAExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_4PDAExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5898D3F1BB2E50916D45ED7 /* Pods-4PDAExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-4PDAExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-4PDAExample/Pods-4PDAExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +46,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF4DB1F49B9339FFCB07548A /* Pods_4PDAExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32995BEED78309A0FE10DC18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5898D3F1BB2E50916D45ED7 /* Pods-4PDAExample.debug.xcconfig */,
+				34C2D9668A22C37EA1417656 /* Pods-4PDAExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		845F50391E08074C00016665 = {
 			isa = PBXGroup;
 			children = (
 				845F50441E08074C00016665 /* 4PDAExample */,
 				845F50431E08074C00016665 /* Products */,
+				32995BEED78309A0FE10DC18 /* Pods */,
+				A6419CF85B90D11F38E31D29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +83,8 @@
 		845F50441E08074C00016665 /* 4PDAExample */ = {
 			isa = PBXGroup;
 			children = (
+				845F50671E08281F00016665 /* Models */,
+				845F50621E08140600016665 /* Services */,
 				845F50451E08074D00016665 /* AppDelegate.swift */,
 				845F50471E08074D00016665 /* ViewController.swift */,
 				845F50491E08074D00016665 /* Main.storyboard */,
@@ -63,8 +92,36 @@
 				845F50511E08074D00016665 /* LaunchScreen.storyboard */,
 				845F50541E08074D00016665 /* Info.plist */,
 				845F504C1E08074D00016665 /* _PDAExample.xcdatamodeld */,
+				845F505D1E080E5700016665 /* RSSCell.swift */,
+				845F505F1E080F6000016665 /* 4PDAExample-Bridging-Header.h */,
+				845F50651E081D3600016665 /* RSSCell.xib */,
 			);
 			path = 4PDAExample;
+			sourceTree = "<group>";
+		};
+		845F50621E08140600016665 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				845F50631E08141000016665 /* RSSParser.swift */,
+				845F506A1E082C7700016665 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		845F50671E08281F00016665 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				845F50681E08284100016665 /* FeedInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A6419CF85B90D11F38E31D29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC024B0D6B72A30224358766 /* Pods_4PDAExample.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 845F50571E08074D00016665 /* Build configuration list for PBXNativeTarget "4PDAExample" */;
 			buildPhases = (
+				32AD3846F8E7DE07D864C7D8 /* [CP] Check Pods Manifest.lock */,
 				845F503E1E08074C00016665 /* Sources */,
 				845F503F1E08074C00016665 /* Frameworks */,
 				845F50401E08074C00016665 /* Resources */,
+				A8B39279F2091F1A8ECFBD7F /* [CP] Embed Pods Frameworks */,
+				21E935C51A1036C1606F53F2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,6 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845F50661E081D3600016665 /* RSSCell.xib in Resources */,
 				845F50531E08074D00016665 /* LaunchScreen.storyboard in Resources */,
 				845F50501E08074D00016665 /* Assets.xcassets in Resources */,
 				845F504B1E08074D00016665 /* Main.storyboard in Resources */,
@@ -135,14 +196,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		21E935C51A1036C1606F53F2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-4PDAExample/Pods-4PDAExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32AD3846F8E7DE07D864C7D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A8B39279F2091F1A8ECFBD7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-4PDAExample/Pods-4PDAExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		845F503E1E08074C00016665 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845F505E1E080E5700016665 /* RSSCell.swift in Sources */,
 				845F504E1E08074D00016665 /* _PDAExample.xcdatamodeld in Sources */,
 				845F50481E08074D00016665 /* ViewController.swift in Sources */,
 				845F50461E08074D00016665 /* AppDelegate.swift in Sources */,
+				845F50641E08141000016665 /* RSSParser.swift in Sources */,
+				845F50691E08284100016665 /* FeedInfo.swift in Sources */,
+				845F506B1E082C7700016665 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +374,7 @@
 		};
 		845F50581E08074D00016665 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5898D3F1BB2E50916D45ED7 /* Pods-4PDAExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DRUDQFX3X3;
@@ -268,12 +382,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.moshkovbro.-PDAExample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "4PDAExample/4PDAExample-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		845F50591E08074D00016665 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34C2D9668A22C37EA1417656 /* Pods-4PDAExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DRUDQFX3X3;
@@ -281,6 +397,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.moshkovbro.-PDAExample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "4PDAExample/4PDAExample-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -304,6 +421,7 @@
 				845F50591E08074D00016665 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

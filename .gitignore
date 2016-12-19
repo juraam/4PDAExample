@@ -1,0 +1,7 @@
+#mac-os
+.DS_Store
+#xcode
+xcuserdata/
+xcshareddata/
+#cocoapods
+Pods/
